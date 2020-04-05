@@ -26,13 +26,13 @@ Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapur
 
 ## Caracteristicas Electricas
 
-| DescripcioN | Unidad                    |
+| Descripcion | Unidad                    |
 | ------------- | ------------------------------ |
 | Voltaje Minimo  Vin |  3.7 Voltios    |  
 | Voltaje Maximo  Vin |  9 Voltios    |  
 | Voltaje  alimentacion VCC |  3.3 Voltios    | 
 | Corriente maxima   | 1A     |
-| Antena helicoidal    | 2.5DBi      |
+| Antena helicoidal    | 2.5 DBi      |
 
 
 ## Descripcion de pines Ufox
