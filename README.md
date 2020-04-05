@@ -1,25 +1,25 @@
-# 32U4 DEVKIT SIGFOX 
+# Ufox devkit Sigfox V1.0
 Region RC4 ( Latinoamerica: Argentina, Chile, Colombia, Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua, Panama, PERÚ, Trinidad & Tobago, Uruguay.
 Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Thailandia.
 
-## 32U4 DEVKIT SIGFOX  IMAGEN
+## Ufox imagen
 
 ![](https://github.com/markoAntonio1692/32U4-DEVKIT-SIGFOX/blob/master/image/1.JPG )
 
 
 ## Caracteristicas
 
-- Placa de desarrollo basado en el chip Atmega32U4 USB y Modem Wisol RC4 para aplicaciones Sigfox.
-- Programable con Arduino IDE (compatible con pines de arduino Leonardo, ProMicro, Micro, y otras placas arduino basadas en chip 32U4).
-- Incluye una antena helicoidal omnidireccional de 2.5 DBi y opcionalmente un conector  UFL para antenas externas. (previamente desoladar la antena helicoidal para su uso). 
+- Placa de desarrollo basado en el el microcontrolador Atmega32U4 USB y Modem Wisol RC4 para aplicaciones Sigfox.
+- Programable con Arduino IDE (compatible con pines de arduino Leonardo, ProMicro, Micro, y otras placas arduino basadas en el micro atmega32U4).
+- Incluye una antena interna helicoidal  de 2.5 Dbi y opcionalmente un conector  UFL para antenas externas. (previamente desoladar la antena helicoidal para su uso). 
 - Puede alimentarse directamente de una fuente USB, circuito interno trabaja a 3.3V.
 - Ideal para desarrollar prototipos y aplicaciones de forma rapida ya que incluye un microcotrolador compatible con arduino.
-- Cuenta con un regulador de voltaje de 3.3V AMS1117 que puede suministar hasta 1 amperio de corriente.
-- Diseño compacto, seguro y de bajo consumo, ya que incorpora tan solo un chip microcontrolador y el modem Wisol RC4.
-- Comunicacion serial por Hardware  (Pin Tx  RX -Serial1 arduino) dedicado para comunicacion con modem Wisol.
-- Pin Reset de modulo Wisol Conectado al Pin "12" arduino. 
-- Incorpora un Boton de reset y Boton adicional 13 de proposito general programable en el pin "13" arduino
-- Pines Digitales, Analogicos, PWM, comunicacion SPI, I2C, Serial.
+- Cuenta con un regulador de voltaje de 3.3V AMS1117 que suministra  hasta 1 amperio de corriente.
+- Diseño compacto, seguro y de bajo consumo
+- Comunicacion serial por Hardware (Serial1 Arduino) exclusivo para comunicacion con modem Wisol.
+- Reset de modulo Wisol Conectado al Pin "12" Arduino. 
+- Boton de proposito general programable en el pin "13" Arduino
+- Pines Digitales, Analogicos, PWM, comunicacion SPI, I2C,Interrupcion externa, Serial.
 - informacion acerca de arduino leonardo: 
 `<link>` : <https://store.arduino.cc/usa/leonardo>
 
@@ -28,26 +28,27 @@ Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapur
 
 | DescripcioN | Unidad                    |
 | ------------- | ------------------------------ |
-| Voltaje Minimo  RAW |  3.7 Voltios    |  
-| Voltaje Maximo  RAW |  9 Voltios    |  
+| Voltaje Minimo  Vin |  3.7 Voltios    |  
+| Voltaje Maximo  Vin |  9 Voltios    |  
 | Voltaje  alimentacion VCC |  3.3 Voltios    | 
 | Corriente maxima   | 1A     |
 | Antena helicoidal    | 2.5DBi      |
 
 
-## Descripcion de pines 32U4 DEVKIT SIGFOX
+## Descripcion de pines Ufox
 
 ![](https://github.com/markoAntonio1692/32U4-DEVKIT-SIGFOX/blob/master/image/PINOUT.png)
 
 
-# Cargar un Programa a 32U4 DEVKIT SIGFOX
-- Enchufe el conector micro usb a 32U4 DEVKIT SIGFOX y LUEGO enchufar el cable usb a su PC
-- Espere a que su PC lo reconosca.
-- Abra su ide Arduino.
-- Puede usar este ejemplo como inicio:
+# Cargar un Sketch a Ufox
+- Enchufe el cable micro usb con  el conector micro usb de Ufox, luego enchufar el cable microusb usb a su PC
+- Espere a que su PC  reconosca a Ufox (el reconocimiento es instantaneos para SO Window ,7,8,10).
+- Abra el Ide Arduino.
+- Puede cargar un  ejemplo de inicio  como el siguiente:
 
 
-#### Comuncacion Serial chip wisol y arduino
+#### Comuncacion Serial con modem Wisol
+*El modem Wisol WSSFM10R4AT puede comunicarse mediante comunicacion seral a 9600 baudios, con una sintaxis definida con comando "AT", puede consultar mas informacion de comandos en la hoja de datos (datasheet). El modem trabaja a una frecuencia de 920MHZ Uplink y 922 Dowlink. Consulte mas informacionde como activar el mdem en la platafoma de sigfox o con su operador sigfox Local : Aqui 
 
 ```javascript
 void setup() {
