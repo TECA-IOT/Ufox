@@ -33,8 +33,8 @@ Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapur
 | Voltaje  alimentacion VCC |  3.3 Voltios    | 
 | Corriente maxima   | 1A     |
 | Antena helicoidal    | 2.5 DBi      |
-| Frec. Uplink     | 920 Mhz      |
-| Frec. Downlink     | 923 Mhz      |
+| Frec. Uplink     | 920.8 MHz      |
+| Frec. Downlink     | 922.3 MHz      |
 
 
 ## Descripcion de pines Ufox
