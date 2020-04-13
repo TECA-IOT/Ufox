@@ -6,14 +6,14 @@ Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapur
 
 ## Caracteristicas
 
-- Placa de desarrollo basado en el el microcontrolador Atmega32U4 USB y Modem Wisol RC4 para aplicaciones Sigfox.
+- Microcontrolador Atmega32U4 USB y Modem Wisol WSSFM10R4 RC4 .
 - Programable con Arduino IDE (compatible con pines de arduino Leonardo, ProMicro, Micro, y otras placas arduino basadas en el micro atmega32U4).
-- Incluye una antena interna helicoidal  de 2.5 Dbi y opcionalmente un conector  UFL para antenas externas. (previamente desoladar la antena helicoidal para su uso). 
-- Puede alimentarse directamente de una fuente USB, circuito interno trabaja a 3.3V.
-- Ideal para desarrollar prototipos y aplicaciones de forma rapida ya que incluye un microcotrolador compatible con arduino.
-- Cuenta con un regulador de voltaje de 3.3V AMS1117 que suministra  hasta 1 amperio de corriente.
+- Incluye una antena interna helicoidal  de 2.5 Dbi y opcionalmente un conector  UFL para antenas externas. (se recomienda previamente desoladar la antena helicoidal para su uso). 
+- Alimentacion desde fuente USB 5V con voltaje de operacion interno de 3.3V.
+- Ideal para desarrollar prototipos y aplicaciones de forma rapida y sencilla, incluye un microcotrolador Atmega32U4  compatible con arduino.
+- Cuenta con un regulador de voltaje de 3.3V AMS1117  suministra  hasta 1 amperio de corriente.
 - Diseño compacto, seguro y de bajo consumo
-- Comunicacion serial por Hardware (Serial1 Arduino) exclusivo para comunicacion con modem Wisol.
+- Comunicacion serial por Hardware (Serial1 Arduino) dedicado exclusivamente para comunicacion con modem Wisol.
 - Reset de modulo Wisol Conectado al Pin "12" Arduino. 
 - Boton de proposito general programable en el pin "13" Arduino
 - Pines Digitales, Analogicos, PWM, comunicacion SPI, I2C,Interrupcion externa, Serial.
