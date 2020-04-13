@@ -4,7 +4,7 @@ Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapur
 
 ## Ufox imagen
 
-![](https://github.com/TECA-IOT/Ufox/blob/master/image/Ufox.png )
+![](https://github.com/TECA-IOT/Ufox/blob/master/image/Ufox.jpg )
 
 
 ## Caracteristicas
