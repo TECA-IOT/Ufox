@@ -1,0 +1,26 @@
+#######################################
+# Syntax Coloring Map for Ufox
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Ufox		KEYWORD1
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+comand 	KEYWORD2
+SEND 		KEYWORD2
+TEMP	 	KEYWORD2
+VOLT 		KEYWORD2
+ID	 	KEYWORD2
+PAC	 	KEYWORD2
+RST	 	KEYWORD2
+SLEEP	 	KEYWORD2
+SEND_RCV 	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
