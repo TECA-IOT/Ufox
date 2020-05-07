@@ -36,7 +36,7 @@ Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapur
 
 ## Descripcion de pines Ufox
 
-![](https://github.com/TECA-IOT/Ufox/blob/master/image/pinout%20ufox_1_2.png)
+![](https://github.com/TECA-IOT/Ufox/blob/master/image/PINOUT_ufox_R1_3.png)
 
 
 # Cargar un Sketch a Ufox
