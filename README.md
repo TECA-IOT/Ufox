@@ -74,7 +74,7 @@ void loop()
 ![](https://github.com/markoAntonio1692/32U4-DEVKIT-SIGFOX/blob/master/image/arduino.jpg)
 
 #### Comuncacion Serial con modem Wisol
-*El modem Wisol WSSFM10R4AT puede comunicarse mediante comunicacion seral a 9600 baudios, con una sintaxis definida con comando "AT", puede consultar mas informacion de comandos en la hoja de datos (datasheet). El modem trabaja a una frecuencia de 920MHZ Uplink y 922 Dowlink. Consulte mas informacionde como activar el mdem en la platafoma de sigfox o con su operador sigfox Local : Aqui 
+*El modem Wisol WSSFM10R4AT puede comunicarse mediante puerto serial1 a 9600 baudios, con una sintaxis definida con comando "AT", puede consultar mas informacion de comandos en la hoja de datos (datasheet). El modem trabaja a una frecuencia de 920MHZ Uplink y 922 Dowlink. Consulte mas informacionde como activar el mdem en la platafoma de sigfox o con su operador sigfox Local : Aqui 
 
 ```javascript
 void setup() {
