@@ -168,6 +168,10 @@ void loop() {
 }
 ```
 ###
+
+![](https://github.com/TECA-IOT/Ufox/blob/master/image/qwrw.PNG)
+
+###
 - La informacion podra vizualizarse en el backend de sigfox. Usted previamente debe tener asociado a su cuenta el devkit ufox con su respectivo PAC  y ID.
 
 ![](https://github.com/TECA-IOT/Ufox/blob/master/image/wewe.png)
