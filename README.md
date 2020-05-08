@@ -95,6 +95,8 @@ La libreria ufox incorpora una serie de funciones y metodos que simplifican la c
 - Opcion 1: descomprima este repositorio .ZIP y copie la carpeta dentro de :  [Unidad]:\Users\[usuario]\Documents\Arduino\libraries
 - Opcion 2: desde el mismo IDE Arduino dirijase a "Programa, Incluir  Libreria, Añadir biblioteca  .ZIP" localice el repositorio descargado y abrir.
 
+- Una vez instalado recargue el  Ide arduino y podra ver que la libreria y ejemplo se muestran: 
+
 ![](https://github.com/TECA-IOT/Ufox/blob/master/image/lib_ufox1.png)
 
 ### Blink Ufox
