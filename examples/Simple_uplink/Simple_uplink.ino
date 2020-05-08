@@ -42,7 +42,7 @@ void loop() {
     digitalWrite(RXLED,LOW);
     wisol.RST();
     
-    uint32_t valor =10;
+    uint32_t valor =random(0,15);
     Serial.println(wisol.SEND(valor));
 
     //String valor2 ="10";
