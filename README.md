@@ -40,7 +40,7 @@ Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapur
 
 
 # Cargar un Sketch a Ufox
-- Enchufe el cable micro usb con  el conector micro usb de Ufox, luego enchufar el cable microusb usb a su PC
+- Enchufe el cable usb con  el conector micro usb de Ufox, luego conectar a su PC
 - Espere a que su PC  reconosca a Ufox (el reconocimiento es instantaneos para SO Window ,7,8,10).
 - Abra el Ide Arduino.
 - Puede cargar un  ejemplo de inicio  como el siguiente:
@@ -68,6 +68,11 @@ void loop()
 }
 ```
 
+- Selecciones la placa Arduino Leonardo y seleccion el puerto COM detectado en su PC.
+- Y cargue el sketch.
+
+![](https://github.com/markoAntonio1692/32U4-DEVKIT-SIGFOX/blob/master/image/arduino.jpg)
+
 #### Comuncacion Serial con modem Wisol
 *El modem Wisol WSSFM10R4AT puede comunicarse mediante comunicacion seral a 9600 baudios, con una sintaxis definida con comando "AT", puede consultar mas informacion de comandos en la hoja de datos (datasheet). El modem trabaja a una frecuencia de 920MHZ Uplink y 922 Dowlink. Consulte mas informacionde como activar el mdem en la platafoma de sigfox o con su operador sigfox Local : Aqui 
 
@@ -87,13 +92,6 @@ void loop() {
   
 }
 ```
-
-
-- Selecciones la placa Arduino Leonardo y seleccion el puerto COM detectado en su PC.
-- Y cargue el sketch.
-
-![](https://github.com/markoAntonio1692/32U4-DEVKIT-SIGFOX/blob/master/image/arduino.jpg)
-
 
 - Una vez cargado el sketch abra la terminal serial a 9600 baudios, seleccionar la opcion "Nueva línea".
 - Escribir el comando "AT",presionar  enter, y a continuacion el chip wisol respondera con un "Ok"  
