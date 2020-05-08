@@ -93,8 +93,52 @@ Enviar un mensaje a backend sigfox sera el siguiente: 255 decimal, SIGA LA SECUE
 ## LIBRERÍA UFOX ARDUINO
 La libreria ufox incorpora una serie de funciones y metodos que simplifican la conexion a la red de sigfox. Instale la libreria Ufox  en el IDE de arduino descargando este repositorio, existen diversos modos de instalar libreria externas, 
 - Opcion 1: descomprima este repositorio .ZIP y copie la carpeta dentro de :  [Unidad]:\Users\[usuario]\Documents\Arduino\libraries
-- desde el mismo IDE Arduino dirijase a "Programa, Incluir  Libreria, Añadir biblioteca  .ZIP" localice el repositorio descargado y abrir.
+- Opcion 2: desde el mismo IDE Arduino dirijase a "Programa, Incluir  Libreria, Añadir biblioteca  .ZIP" localice el repositorio descargado y abrir.
 
 ![](https://github.com/TECA-IOT/Ufox/blob/master/image/lib_ufox1.png)
 
+### Enviar un Mensaje Simple
+En ste ejemplo puede enviar un Mensaje numerico cada vez que el boton 13 sea presionado, tenga en cuenta que los mensajes sigfox son hexagesimales de maximo 12 bytes, todos los valores numericos seran convertidos a valores hexagesimales
+
+```javascript
+#include <Ufox.h>
+
+#define btn   13
+#define RXLED  17 
+
+Ufox wisol;
+
+void setup() {
+  pinMode(btn,INPUT);
+  pinMode(RXLED,OUTPUT);
+  
+  Serial.begin(115200);
+  wisol.begin(9600);
+
+  while(!Serial);  //comentar si usará una fuente de energía externa
+
+ Serial.println("-Presione botón 13-");
+}
+
+void loop() {
+  
+  if(digitalRead(btn)==0){
+
+    digitalWrite(RXLED,LOW);
+    wisol.RST();
+    
+    uint32_t valor =10;
+    Serial.println(wisol.SEND(valor));
+
+    //String valor2 ="10";
+    //Serial.println(wisol.SEND(valor2));
+    
+    digitalWrite(RXLED,HIGH);
+    wisol.SLEEP();
+    delay(3000);
+    Serial.println("-Presione botón 13-");
+  }
+  
+}
+```
 
