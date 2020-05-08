@@ -45,6 +45,28 @@ Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapur
 - Abra el Ide Arduino.
 - Puede cargar un  ejemplo de inicio  como el siguiente:
 
+### Blink Ufox
+Ufox dispone de 2 led de señalizacion Serial Tx y RX, el usuario puede hacer uso de estos led, en este ejemplo se muestra como hacer uso de ellos.
+
+```javascript
+
+int RXLED = 17;  // El RXLED (AZUL) tiene un pin Arduino definido con numero 17
+
+void setup()
+{
+  pinMode(RXLED, OUTPUT);  //LED RX como salida
+}
+
+void loop()
+{
+  digitalWrite(RXLED, LOW);   // encender RXLED 
+  TXLED0;                   //  apagar TXLED
+  delay(500);                 // Esperar un segundo
+  digitalWrite(RXLED, HIGH);    // apagar el RXLED
+  TXLED1;                     //TXLED macro, encender TXLED 
+  delay(500);                 // Esperar un segundo
+}
+```
 
 #### Comuncacion Serial con modem Wisol
 *El modem Wisol WSSFM10R4AT puede comunicarse mediante comunicacion seral a 9600 baudios, con una sintaxis definida con comando "AT", puede consultar mas informacion de comandos en la hoja de datos (datasheet). El modem trabaja a una frecuencia de 920MHZ Uplink y 922 Dowlink. Consulte mas informacionde como activar el mdem en la platafoma de sigfox o con su operador sigfox Local : Aqui 
@@ -99,28 +121,6 @@ La libreria ufox incorpora una serie de funciones y metodos que simplifican la c
 
 ![](https://github.com/TECA-IOT/Ufox/blob/master/image/lib_ufox1.png)
 
-### Blink Ufox
-Ufox dispone de 2 led de señalizacion Serial Tx y RX, el usuario puede hacer uso de estos led, en este ejemplo se muestra como hacer uso de ellos.
-
-```javascript
-
-int RXLED = 17;  // El RXLED (AZUL) tiene un pin Arduino definido con numero 17
-
-void setup()
-{
-  pinMode(RXLED, OUTPUT);  //LED RX como salida
-}
-
-void loop()
-{
-  digitalWrite(RXLED, LOW);   // encender RXLED 
-  TXLED0;                   //  apagar TXLED
-  delay(500);                 // Esperar un segundo
-  digitalWrite(RXLED, HIGH);    // apagar el RXLED
-  TXLED1;                     //TXLED macro, encender TXLED 
-  delay(500);                 // Esperar un segundo
-}
-```
 
 
 ### Enviar un Mensaje Simple
@@ -167,4 +167,7 @@ void loop() {
   
 }
 ```
+###
+- La informacion podra vizualizarse en el backend de sigfox. Usted previamente debe tener asociado a su cuenta el devkit ufox con su respectivo PAC  y ID.
 
+![](https://github.com/TECA-IOT/Ufox/blob/master/image/wewe.png)
