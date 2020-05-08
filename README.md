@@ -97,6 +97,30 @@ La libreria ufox incorpora una serie de funciones y metodos que simplifican la c
 
 ![](https://github.com/TECA-IOT/Ufox/blob/master/image/lib_ufox1.png)
 
+### Blink Ufox
+Ufox dispone de 2 led de señalizacion Serial Tx y RX, el usuario puede hacer uso de estos led, en este ejemplo se muestra como hacer uso de ellos.
+
+```javascript
+
+int RXLED = 17;  // El RXLED (AZUL) tiene un pin Arduino definido con numero 17
+
+void setup()
+{
+  pinMode(RXLED, OUTPUT);  //LED RX como salida
+}
+
+void loop()
+{
+  digitalWrite(RXLED, LOW);   // encender RXLED 
+  TXLED0;                   //  apagar TXLED
+  delay(500);                 // Esperar un segundo
+  digitalWrite(RXLED, HIGH);    // apagar el RXLED
+  TXLED1;                     //TXLED macro, encender TXLED 
+  delay(500);                 // Esperar un segundo
+}
+```
+
+
 ### Enviar un Mensaje Simple
 En ste ejemplo puede enviar un Mensaje numerico cada vez que el boton 13 sea presionado, tenga en cuenta que los mensajes sigfox son hexagesimales de maximo 12 bytes, todos los valores numericos seran convertidos a valores hexagesimales
 
