@@ -1,5 +1,5 @@
 # Ufox devkit Sigfox 
-![](https://github.com/TECA-IOT/Ufox/blob/master/image/Ufox.jpg )
+![](https://github.com/TECA-IOT/Ufox/blob/master/image/ufox%20devkit.png)
 Kit de desarrollo Sigfox para region RC4 ( Latinoamerica: Argentina, Chile, Colombia, Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua, Panama, Perú, Trinidad & Tobago, Uruguay.
 Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Thailandia.
 
