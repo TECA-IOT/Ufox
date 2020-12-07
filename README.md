@@ -20,7 +20,7 @@ Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapur
 - informacion acerca de arduino leonardo: 
 `<link>` : <https://store.arduino.cc/usa/leonardo>
 
-![](https://github.com/TECA-IOT/Ufox/blob/master/image/ufox%20devkit.png)
+![](https://github.com/TECA-IOT/Ufox/blob/master/image/ufox%20antena.png)
 
 ## Caracteristicas Electricas
 
