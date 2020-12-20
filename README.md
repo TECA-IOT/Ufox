@@ -111,7 +111,7 @@ Enviar un mensaje a backend sigfox sera el siguiente: 255 decimal, SIGA LA SECUE
 - AT$RC
 - AT$SF=FF
 
-## LIBRERÍA UFOX ARDUINO
+## LIBRERÍA UFOX ARDUINO | librería Sigfox
 La libreria ufox incorpora una serie de funciones y metodos que simplifican la conexion a la red de sigfox. Instale la libreria Ufox  en el IDE de arduino descargando este repositorio, existen diversos modos de instalar libreria externas, 
 - Opcion 1: descomprima este repositorio .ZIP y copie la carpeta dentro de :  [Unidad]:\Users\[usuario]\Documents\Arduino\libraries
 - Opcion 2: desde el mismo IDE Arduino dirijase a "Programa, Incluir  Libreria, Añadir biblioteca  .ZIP" localice el repositorio descargado y abrir.
