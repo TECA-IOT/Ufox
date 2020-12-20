@@ -8,7 +8,7 @@ Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapur
 
 - Microcontrolador Atmega32U4 USB y Modem Wisol WSSFM10R4 RC4 .
 - Programable con Arduino IDE (compatible con pines de arduino Leonardo, ProMicro, Micro, y otras placas arduino basadas en el micro atmega32U4).
-- Incluye una antena interna helicoidal  de 2.5 Dbi y opcionalmente un conector  UFL para antenas externas. (se recomienda previamente desoladar la antena helicoidal para su uso). 
+- Incluye una antena interna helicoidal  de 3 Dbi y opcionalmente un conector  UFL para antenas externas. (se recomienda previamente desoladar la antena helicoidal para su uso). 
 - Alimentacion desde fuente USB 5V con voltaje de operacion interno de 3.3V.
 - Ideal para desarrollar prototipos y aplicaciones de forma rapida y sencilla, incluye un microcotrolador Atmega32U4  compatible con arduino.
 - Cuenta con un regulador de voltaje de 3.3V AMS1117  suministra  hasta 1 amperio de corriente.
@@ -30,7 +30,7 @@ Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapur
 | Voltaje Maximo  Vin |  9 Voltios    |  
 | Voltaje  alimentacion VCC |  3.3 Voltios    | 
 | Corriente maxima   | 1A     |
-| Antena helicoidal    | 2.5 DBi      |
+| Antena helicoidal    | 3 DBi      |
 | Frec. Uplink     | 920.8 MHz      |
 | Frec. Downlink     | 922.3 MHz      |
 
