@@ -37,7 +37,7 @@ void loop() {
       
       String id=wisol.ID();
       
-      Serial.println(wisol.comand("AT$SL="+id));
+      Serial.println(wisol.command("AT$SL="+id));
       
       digitalWrite(RXLED,HIGH);
       wisol.SLEEP();

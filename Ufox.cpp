@@ -47,7 +47,7 @@ void Ufox::begin(uint16_t _baudio) {
   }
 }
 
-String Ufox::comand(String _cmd) {
+String Ufox::command(String _cmd) {
   cmd = _cmd;
   if (dbg) {
      Serial.begin(baudio);
@@ -95,7 +95,7 @@ String Ufox::comand(String _cmd) {
   return cadena_cad;
 }
 
-String Ufox::comand2(String _cmd) {
+String Ufox::command2(String _cmd) {
   cmd = _cmd;
   if (dbg) {
     Serial.begin(baudio);
@@ -168,20 +168,20 @@ String Ufox::comand2(String _cmd) {
   }
 
   String Ufox::ID() {
-    return Ufox::comand(ATS + "I=10");
+    return Ufox::command(ATS + "I=10");
   }
 
   String Ufox::PAC() {
-    return Ufox::comand(ATS + "I=11");
+    return Ufox::command(ATS + "I=11");
   }
 
   uint16_t  Ufox::TEMP() {
-    return String(Ufox::comand(ATS + "T?")).toInt();
+    return String(Ufox::command(ATS + "T?")).toInt();
   }
 
   uint16_t  Ufox::VOLT() {
 
-    return  String(Ufox::comand(ATS + "V?")).toInt();
+    return  String(Ufox::command(ATS + "V?")).toInt();
   }
 
   void Ufox::RST() {
@@ -192,42 +192,42 @@ String Ufox::comand2(String _cmd) {
   }
 
   String Ufox::SLEEP() {
-    return Ufox::comand(ATS + "P=2");
+    return Ufox::command(ATS + "P=2");
   }
 
   String Ufox::SEND(uint32_t _dataint) {
     dataint = _dataint;
-    Ufox::comand(ATS + "GI?");
-    Ufox::comand(ATS + "RC");
+    Ufox::command(ATS + "GI?");
+    Ufox::command(ATS + "RC");
     char cadena_cad[15] = "";
     sprintf(cadena_cad, "SF=%08lx", dataint);
-    return Ufox::comand(ATS + cadena_cad);
+    return Ufox::command(ATS + cadena_cad);
   }
   
  String Ufox::SEND(String _datastr) {
     datastr = _datastr;
     if (datastr.length() > 24) return ("error");
     if (datastr.length() % 2 != 0)datastr = "0" + datastr;
-    Ufox::comand(ATS + "GI?");
-    Ufox::comand(ATS + "RC");
-    return Ufox::comand(ATS + "SF=" + datastr);
+    Ufox::command(ATS + "GI?");
+    Ufox::command(ATS + "RC");
+    return Ufox::command(ATS + "SF=" + datastr);
   }
   
   String Ufox::SEND_RCV(uint32_t _dataint_rcv) {
     dataint_rcv = _dataint_rcv;
-    Ufox::comand(ATS + "GI?");
-    Ufox::comand(ATS + "RC");
+    Ufox::command(ATS + "GI?");
+    Ufox::command(ATS + "RC");
     char cadena_cad[20] = "";
     sprintf(cadena_cad, "SF=%08lx,1", dataint_rcv);
-    return Ufox::comand2(ATS + cadena_cad);
+    return Ufox::command2(ATS + cadena_cad);
   }
 
    String Ufox::SEND_RCV(String _datastr_rcv) {
     datastr_rcv = _datastr_rcv;
     if (datastr_rcv.length() > 24) return ("error");
     if (datastr_rcv.length() % 2 != 0)datastr_rcv = "0" + datastr_rcv;
-    Ufox::comand(ATS + "GI?");
-    Ufox::comand(ATS + "RC");
+    Ufox::command(ATS + "GI?");
+    Ufox::command(ATS + "RC");
     char cadena_cad[20] = "";
-    return Ufox::comand2(ATS + "SF=" + datastr_rcv+",1");
+    return Ufox::command2(ATS + "SF=" + datastr_rcv+",1");
   }

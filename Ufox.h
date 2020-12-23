@@ -13,7 +13,7 @@ class Ufox
     Ufox(bool _dbg, uint8_t _rst_ws);
     void debug(bool _dbg);
     void begin(uint16_t _baudio);
-    String comand(String _cmd);
+    String command(String _cmd);
     String ID();
     String PAC();
     uint16_t TEMP();
@@ -34,7 +34,7 @@ class Ufox
     char caracter = 0x00;
     char cadena_cad[40]= " ";
     uint8_t i;
-    String comand2(String _cmd);
+    String command2(String _cmd);
     bool dbg;
     uint8_t rst_ws;
     uint32_t dato;

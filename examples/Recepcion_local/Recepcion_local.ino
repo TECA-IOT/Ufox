@@ -28,7 +28,7 @@ void setup() {
 
 void loop() {
   
-   String rec = wisol.comand("AT$RL");    
+   String rec = wisol.command("AT$RL");    
    Serial.print("recibido: ");
    Serial.println(rec);
       
