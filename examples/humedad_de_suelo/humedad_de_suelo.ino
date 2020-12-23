@@ -5,18 +5,8 @@ UFOX  es un kit de desarrollo Sigfox basado en el microcontrolador
 ATMEGA 32U4 y modem WSSFM10R4 la compilacion es compatible con  Arduino Leonardo
 más informacion en https://github.com/TECA-IOT/Ufox
 
-  En este ejemplo se hace el seguimiento de un activo, como en el caso de un 
-  carro frigorífico, de alimentos, o incluso traking vehicular, etc. 
-  enviando su posición relativa.
-
-  La variable a monitorear es la temperatura, además se envía el voltaje de la 
-  bateria en mV del dispositivo.
-
-  Las variables latitud y longitud en formato decimal, las puede reemplazar por
-  la lectura de un Gps real.
-
-  Estas variables en conjunto forman una cadena de 12 bytes, al presionar el
-   boton 13 los datos son enviados al backend de Sigfox
+  este ejemplo necesita un sensor de humedad de suelo capacitivo con salida analogica.
+  por ejemplo este de DF-robot o una similar https://wiki.dfrobot.com/Capacitive_Soil_Moisture_Sensor_SKU_SEN0193
 
   Para desempaquetar esta cadena de datos usted debe configuar un callback 
   personalizado en el backend de sigfox con  las variables correspondientes con las que 
@@ -29,6 +19,10 @@ más informacion en https://github.com/TECA-IOT/Ufox
 #define RXLED  17 
 
 Ufox wisol;
+
+const int AirValue = 0;   //el valor que devuelve el sensor cuando esta suspendido en el aire. (no tocar con las manos)
+const int WaterValue = 210;  //el valor que devuelve el sensor cuando esta sumerguido en agua. puede usar un vaso con agua del caño.
+
 
 void setup() {
  Serial.begin(115200);
@@ -49,20 +43,27 @@ void loop() {
      wisol.RST(); 
      digitalWrite(RXLED,LOW);
      
-     int32_t latitud = 120869717;       //long=32bits=4bytes
-     int32_t longitud = 770512918;      //long=32bits=4bytes
-     int16_t temperatura = wisol.TEMP();     //int=16bits=2bytes
+     uint16_t  humedad_adc = analogRead(A0); //2bytes
+     int   h_r = map(humedad_adc, AirValue, WaterValue, 0, 100);
+     uint8_t   humedad_relativa = 0;// solo varia de 0 a 100. un byte es suficiente.
+     
+     if( h_r<0   ) h_r=0;
+     else if( h_r>100 ) h_r=100;
+
+     humedad_relativa = h_r; //1 byte
+     
+     int16_t temperatura_w = wisol.TEMP();     //int=16bits=2bytes
      uint16_t bateria = wisol.VOLT();         //int=16bits=2bytes
-                                                 //Total=12Bytes                                                  
-     Serial.print(latitud); Serial.print(" ");
-     Serial.print(longitud); Serial.print(" ");
-     Serial.print(temperatura); Serial.print(" ");
+                                                 //Total=7Bytes                                                  
+     Serial.print(humedad_adc); Serial.print(" ");
+     Serial.print(humedad_relativa); Serial.print(" ");
+     Serial.print(temperatura_w); Serial.print(" ");
      Serial.print(bateria); Serial.println(" ");
      
      char buff[30]="";
      //formatear a cadena, convertir los datos a valores hexagesimales
-     sprintf(buff,"%08lx%08lx%04x%04x",latitud,longitud,temperatura,bateria);  
-     //Custom payload config   lat::int:32 long::int:32 temp::int:16 bat::uint:16
+     sprintf(buff,"%04x%02x%04x%04x",humedad_adc,humedad_relativa,temperatura_w,bateria);  
+     //Custom payload config   humADC::uint:16 humREL::uint:8 temp::int:16 bat::uint:16
 
      Serial.print("Enviando: ");
      Serial.println(buff);
