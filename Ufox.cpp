@@ -69,6 +69,12 @@ String Ufox::command(String _cmd) {
        }
       if(Serial1.available()){
          caracter = Serial1.read();
+        if(i>40){
+          delay(300);
+          while( Serial1.available() ){ Serial1.read(); }
+          cadena_cad[0] = 0x00;
+          return "ERROR: OVERFLOW!!!";
+        }
          cadena_cad[i] = caracter;
         i++;
       }
@@ -82,6 +88,12 @@ String Ufox::command(String _cmd) {
        }
      if(Serial1.available()){
         caracter = Serial1.read();
+        if(i>40){
+          delay(300);
+          while( Serial1.available() ){ Serial1.read(); }
+          cadena_cad[0] = 0x00;
+          return "ERROR: OVERFLOW!!!";
+        }
         cadena_cad[i] = caracter;
         i++;
     }
