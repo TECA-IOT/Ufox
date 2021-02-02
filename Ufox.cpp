@@ -60,7 +60,7 @@ String Ufox::command(String _cmd) {
   long lastMsg = millis();
   caracter = 0x00;
   i = 0;
- for(int a=0;a<=40;a++){cadena_cad[a]= 0x00;}
+ for(int a=0;a<40;a++){cadena_cad[a]= 0x00;}
   Serial1.println(cmd);
   do{
        long now = millis();
@@ -119,7 +119,7 @@ String Ufox::command2(String _cmd) {
 
   i = 0;
   uint32_t t = 0;
-  for(int a=0;a<=40;a++){cadena_cad[a]= 0x00;}
+  for(int a=0;a<40;a++){cadena_cad[a]= 0x00;}
   Serial1.println(cmd);
   //Serial.println(cmd);
   long lastMsg = millis();
