@@ -169,13 +169,13 @@ void loop() {
 ### Cómo registrar dispositivos a la red Sigfox
 ✔ Obtenga un dispositivo SIGFOX ReadyTM (hardware)
 ✔ Obtenga el par de código ID/PAC de los dispositivos (extraible en el modem del dispositivo)
-✔ Firme un contrato de suscripción con SIGFOX 
+✔ Firme un contrato de suscripción con SIGFOX
 ✔ Obtenga el inicio de sesión de SIGFOX Cloud (Backend Sigfox)
-✔ Registre sus objetos con ID / PAC 
-Sus dispositivos están listos para la comunicación 
+✔ Registre sus objetos con ID / PAC.
+ Sus dispositivos están listos para la comunicación 
 
-#### GLOSARIO:
-ID : Identificador del dispositivo de 4 bytes (Es único)
+### GLOSARIO
+-ID : Identificador del dispositivo de 4 bytes (Es único)
 PAC :Código de autorización de transferencia de 8 bytes (Válido una vez). PAC es el certificado de propiedad del objeto, es requerido por la plataforma SIGFOX para
 validar las solicitudes de registro / transferencia de equipos. Una vez utilizado, la validez del código expira y se asigna un nuevo código.
 El PAC se proporciona en la venta del objeto (EXTRAIBLE DEL MODULO RF SIGFOX SIGFOX)
