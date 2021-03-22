@@ -3,6 +3,11 @@
 Kit de desarrollo Sigfox para region RC4 ( Latinoamerica: Argentina, Chile, Colombia, Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua, Panama, Perú, Trinidad & Tobago, Uruguay.
 Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Thailandia.
 
+## VISITA LA WIKI UFOX: EJEMPLOS Y DOCUMENTACION AVANZADA
+`<link>` : <https://github.com/TECA-IOT/Ufox/wiki>
+## MANUAL TECNICO
+`<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Manual-T%C3%A9cnico>
+
 
 ## Caracteristicas
 
