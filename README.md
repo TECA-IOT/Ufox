@@ -3,13 +3,13 @@
 Kit de desarrollo Sigfox para region RC4 ( Latinoamerica: Argentina, Chile, Colombia, Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua, Panama, Perú, Trinidad & Tobago, Uruguay.
 Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Thailandia.
 
-## 1.1 VISITA LA WIKI UFOX: EJEMPLOS Y DOCUMENTACION AVANZADA
+## 1.1 Visita la Wiki Ufox: Documentacion y ejemplos avanazados
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki>
-### 1.1.1 API LIBRERIA UFOX.H
+### 1.1.1 API libreria ufox.h
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki/API>
-### 1.1.2 MANUAL TECNICO
+### 1.1.2 Manual Técnico
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Manual-T%C3%A9cnico>
-### 1.1.3 ENVIAR MULTIPLES VARIABLES CON SPRINTF
+### 1.1.3 Enviar múltiples variables en mensaje sigfox con función sprintf
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Funci%C3%B3n-Sprintf>
 
 ## 1.2 Caracteristicas
