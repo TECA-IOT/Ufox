@@ -5,9 +5,12 @@ Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapur
 
 ## 1.1 VISITA LA WIKI UFOX: EJEMPLOS Y DOCUMENTACION AVANZADA
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki>
-## MANUAL TECNICO
+### 1.1.1 API LIBRERIA UFOX.H
+`<link>` : <https://github.com/TECA-IOT/Ufox/wiki/API>
+### 1.1.2 MANUAL TECNICO
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Manual-T%C3%A9cnico>
-
+### 1.1.3 ENVIAR MULTIPLES VARIABLES CON SPRINTF
+`<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Funci%C3%B3n-Sprintf>
 
 ## 1.2 Caracteristicas
 
