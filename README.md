@@ -112,7 +112,7 @@ void loop() {
 
 ![](https://github.com/markoAntonio1692/32U4-DEVKIT-SIGFOX/blob/master/image/AT.JPG)
 
-## 2.3 Enviar mensaje sigfox mediante comandos
+## 2.3 Enviar mensaje sigfox mediante comandos AT
 Enviar un mensaje a backend sigfox sera el siguiente: 255 decimal, SIGA LA SECUENCIA DE COMANDOS SIGUIENTE:
 - AT$GI?
 - AT$RC
@@ -134,16 +134,17 @@ Enviar un mensaje a backend sigfox sera el siguiente: 255 decimal, SIGA LA SECUE
 
 # 3. LIBRERÍA UFOX ARDUINO | librería Sigfox
 La libreria ufox incorpora una serie de funciones y metodos que simplifican la conexion a la red de sigfox. Instale la libreria Ufox  en el IDE de arduino descargando este repositorio, existen diversos modos de instalar libreria externas, 
-- Opcion 1: descomprima este repositorio .ZIP y copie la carpeta dentro de :  [Unidad]:\Users\[usuario]\Documents\Arduino\libraries
-- Opcion 2: desde el mismo IDE Arduino dirijase a "Programa, Incluir  Libreria, Añadir biblioteca  .ZIP" localice el repositorio descargado y abrir.
-
+## 3.1 Instalacion
+### 3.1.1 Opción 1: 
+- descomprima este repositorio .ZIP y copie la carpeta dentro de :  [Unidad]:\Users\[usuario]\Documents\Arduino\libraries
+### 3.1.2 Opción 2: desde el mismo IDE Arduino dirijase a "Programa, Incluir  Libreria, Añadir biblioteca  .ZIP" localice el repositorio descargado y abrir.
 - Una vez instalado recargue el  Ide arduino y podra ver que la libreria y ejemplo se muestran: 
-
 ![](https://github.com/TECA-IOT/Ufox/blob/master/image/lib_ufox1.png)
+### 3.1.3 Opción 3:
+- Abrir el IDE Arduino, y desde el gestor de Libreria de Arduino descargar
 
 
-
-## 3.1 Enviar un Mensaje Simple
+## 3.2 Enviar un Mensaje Simple
 En este ejemplo puede enviar un Mensaje numerico cada vez que el boton 13 sea presionado, tenga en cuenta que los mensajes sigfox son hexagesimales de maximo 12 bytes, todos los valores numericos seran convertidos a valores hexagesimales
 
 ```javascript
