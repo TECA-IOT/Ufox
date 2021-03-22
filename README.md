@@ -1,15 +1,15 @@
-# Ufox devkit Sigfox RC4
+# 1. Ufox devkit Sigfox RC4
 ![](https://github.com/TECA-IOT/Ufox/blob/master/image/Ufox%20devkit.png)
 Kit de desarrollo Sigfox para region RC4 ( Latinoamerica: Argentina, Chile, Colombia, Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua, Panama, Perú, Trinidad & Tobago, Uruguay.
 Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Thailandia.
 
-## VISITA LA WIKI UFOX: EJEMPLOS Y DOCUMENTACION AVANZADA
+## 1.1 VISITA LA WIKI UFOX: EJEMPLOS Y DOCUMENTACION AVANZADA
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki>
 ## MANUAL TECNICO
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Manual-T%C3%A9cnico>
 
 
-## Caracteristicas
+## 1.2 Caracteristicas
 
 - Microcontrolador Atmega32U4 USB y Modem Wisol WSSFM10R4 RC4 .
 - Programable con Arduino IDE (compatible con pines de arduino Leonardo, ProMicro, Micro, y otras placas arduino basadas en el micro atmega32U4).
@@ -27,7 +27,7 @@ Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapur
 
 ![](https://github.com/TECA-IOT/Ufox/blob/master/image/ufox%20antena.png)
 
-## Caracteristicas Electricas
+## 1.3 Caracteristicas Electricas
 
 | Descripcion | Unidad                    |
 | ------------- | ------------------------------ |
@@ -40,18 +40,18 @@ Asia pacifico: Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapur
 | Frec. Downlink     | 922.3 MHz      |
 
 
-## Descripcion de pines Ufox
+## 1.4 Descripcion de pines Ufox
 
 ![](https://github.com/TECA-IOT/Ufox/blob/master/image/PINOUT_ufox_R1_3.png)
 
 
-# Cargar un Sketch a Ufox
+# 2. Cargar un Sketch a Ufox
 - Enchufe el cable usb con  el conector micro usb de Ufox, luego conectar a su PC
 - Espere a que su PC  reconosca a Ufox (el reconocimiento es instantaneos para SO Window ,7,8,10).
 - Abra el Ide Arduino.
 - Puede cargar un  ejemplo de inicio  como el siguiente:
 
-### Blink Ufox
+## 2.1 Blink Ufox
 Ufox dispone de 2 led de señalizacion Serial Tx y RX, el usuario puede hacer uso de estos led, en este ejemplo se muestra como hacer uso de ellos.
 
 ```javascript
@@ -79,7 +79,7 @@ void loop()
 
 ![](https://github.com/markoAntonio1692/32U4-DEVKIT-SIGFOX/blob/master/image/arduino.jpg)
 
-### Comuncacion Serial con modem Wisol
+## 2.2 Comuncacion Serial con modem Wisol
 *El modem Wisol WSSFM10R4AT puede comunicarse mediante puerto serial1 a 9600 baudios, con una sintaxis definida con comando "AT", puede consultar mas informacion de comandos en la hoja de datos (datasheet). El modem trabaja a una frecuencia de 920MHZ Uplink y 922 Dowlink. Consulte mas informacionde como activar el mdem en la platafoma de sigfox o con su operador sigfox Local : Aqui 
 
 ```javascript
@@ -109,13 +109,13 @@ void loop() {
 
 ![](https://github.com/markoAntonio1692/32U4-DEVKIT-SIGFOX/blob/master/image/AT.JPG)
 
-### ENVIAR UN MENSAJE con comandos
+## 2.3 Enviar mensaje sigfox mediante comandos
 Enviar un mensaje a backend sigfox sera el siguiente: 255 decimal, SIGA LA SECUENCIA DE COMANDOS SIGUIENTE:
 - AT$GI?
 - AT$RC
 - AT$SF=FF
 
-## Cómo registrar dispositivos a la red Sigfox
+## 2.4 Cómo registrar dispositivos a la red Sigfox
 -  Obtenga un dispositivo SIGFOX ReadyTM (hardware).
 - Obtenga el par de código ID/PAC de los dispositivos (extraible en el modem del dispositivo).
 - Firme un contrato de suscripción con SIGFOX.
@@ -123,13 +123,13 @@ Enviar un mensaje a backend sigfox sera el siguiente: 255 decimal, SIGA LA SECUE
 - Registre sus objetos con ID / PAC.
  Sus dispositivos están listos para la comunicación.
  
-#### GLOSARIO
+#### 2.4.1 GLOSARIO
 - ID : Identificador del dispositivo de 4 bytes (Es único)
 - PAC :Código de autorización de transferencia de 8 bytes (Válido una vez). PAC es el certificado de propiedad del objeto, es requerido por la plataforma SIGFOX para validar las solicitudes de registro / transferencia de equipos. Una vez utilizado, la validez del código expira y se asigna un nuevo código.
 - El PAC se proporciona en la venta del dispositivo (EXTRAIBLE DEL MODULO RF)
  - Ejemplo: 006D8AF2; 10708756FE9515D5  
 
-## LIBRERÍA UFOX ARDUINO | librería Sigfox
+# 3. LIBRERÍA UFOX ARDUINO | librería Sigfox
 La libreria ufox incorpora una serie de funciones y metodos que simplifican la conexion a la red de sigfox. Instale la libreria Ufox  en el IDE de arduino descargando este repositorio, existen diversos modos de instalar libreria externas, 
 - Opcion 1: descomprima este repositorio .ZIP y copie la carpeta dentro de :  [Unidad]:\Users\[usuario]\Documents\Arduino\libraries
 - Opcion 2: desde el mismo IDE Arduino dirijase a "Programa, Incluir  Libreria, Añadir biblioteca  .ZIP" localice el repositorio descargado y abrir.
@@ -140,7 +140,7 @@ La libreria ufox incorpora una serie de funciones y metodos que simplifican la c
 
 
 
-### Enviar un Mensaje Simple
+## 3.1 Enviar un Mensaje Simple
 En este ejemplo puede enviar un Mensaje numerico cada vez que el boton 13 sea presionado, tenga en cuenta que los mensajes sigfox son hexagesimales de maximo 12 bytes, todos los valores numericos seran convertidos a valores hexagesimales
 
 ```javascript
