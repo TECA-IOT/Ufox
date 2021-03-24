@@ -149,8 +149,8 @@ La libreria ufox incorpora una serie de funciones y metodos que simplifican la c
 
 
 
-## 3.2 Enviar un Mensaje Simple
-En este ejemplo puede enviar un Mensaje numerico cada vez que el boton 13 sea presionado, tenga en cuenta que los mensajes sigfox son hexagesimales de maximo 12 bytes, todos los valores numericos seran convertidos a valores hexagesimales
+## 3.2 Enviar un Mensaje Simple con librería Ufox.h
+En este ejemplo puede enviar un Mensaje numerico cada vez que el boton 13 sea presionado, tenga en cuenta que los mensajes sigfox son hexagesimales de maximo 12 bytes, todos los valores numericos seran convertidos a valores hexagesimales.
 
 ```javascript
 #include <Ufox.h>
