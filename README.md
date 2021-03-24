@@ -145,6 +145,8 @@ La libreria ufox incorpora una serie de funciones y metodos que simplifican la c
 ![](https://github.com/TECA-IOT/Ufox/blob/master/image/lib_ufox1.png)
 ### 3.1.3 Opción 3:
 - Abrir el IDE Arduino, y desde el gestor de descargas de Librerias de Arduino descargar buscar "ufox" y descargarlo.
+![descargar libreria ufox](https://github.com/TECA-IOT/Ufox/blob/master/image/ufox%20descargar%20lib.PNG)
+
 
 
 ## 3.2 Enviar un Mensaje Simple
