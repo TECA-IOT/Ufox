@@ -13,7 +13,7 @@ Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Tha
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Manual-T%C3%A9cnico>
 ### 1.1.3 Enviar múltiples variables en mensaje sigfox con función sprintf
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Funci%C3%B3n-Sprintf>
-### 1.1.4 Librería Fritizng
+### 1.1.4 Librería Fritzing
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Libreria-de-ufox-para-Fritzing>
 ## 1.2 Caracteristicas
 
