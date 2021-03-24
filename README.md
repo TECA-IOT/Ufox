@@ -142,14 +142,12 @@ La libreria ufox incorpora una serie de funciones y metodos que simplifican la c
 ### 3.1.2 Opción 2: 
 - Desde el mismo IDE Arduino dirijase a Programa, Incluir  Libreria, Añadir biblioteca  .ZIP . Localice el repositorio descargado y abrir.
 - Una vez instalado recargue el  Ide arduino y podra ver que la libreria y ejemplo se muestran: 
-![](https://github.com/TECA-IOT/Ufox/blob/master/image/lib_ufox1.png)
 ### 3.1.3 Opción 3:
 - Abrir el IDE Arduino, y desde el gestor de descargas de Librerias de Arduino descargar buscar "ufox" y descargarlo.
 ![descargar libreria ufox](https://github.com/TECA-IOT/Ufox/blob/master/image/ufox%20descargar%20lib.PNG)
 
-
-
 ## 3.2 Enviar un Mensaje Simple con librería Ufox.h
+![](https://github.com/TECA-IOT/Ufox/blob/master/image/lib_ufox1.png)
 En este ejemplo puede enviar un Mensaje numerico cada vez que el boton 13 sea presionado, tenga en cuenta que los mensajes sigfox son hexagesimales de maximo 12 bytes, todos los valores numericos seran convertidos a valores hexagesimales.
 
 ```javascript
