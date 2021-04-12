@@ -7,7 +7,7 @@ Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Tha
 
 ## 1.1 Visita la Wiki Ufox: Documentacion y ejemplos avanzados
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki>
-### 1.1.1 API libreria ufox.h
+### 1.1.1 API librería ufox.h
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki/API>
 ### 1.1.2 Manual Técnico
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Manual-T%C3%A9cnico>
