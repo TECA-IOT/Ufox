@@ -30,7 +30,7 @@ Ufox wisol;
 #include <SoftwareSerial.h>//para comunicacion con el gps
 #include <TinyGPS.h>
 TinyGPS gps;
-SoftwareSerial ss(10, 11);
+SoftwareSerial ss(10, 16);//Rx , Tx  //en este ejemplo solo es necesario conectar el cable de Rx.
 
 float flat, flon;//float=32bits=4bytes
 long lastTx = -70000;
