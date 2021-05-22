@@ -15,6 +15,10 @@ Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Tha
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Funci%C3%B3n-Sprintf>
 ### 1.1.4 Librería Fritzing
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Libreria-de-ufox-para-Fritzing>
+### 1.1.4 Guía de inicio rápido
+`<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Guia-de-inicio-r%C3%A1pido>
+
+
 ## 1.2 Caracteristicas
 
 - Microcontrolador Atmega32U4 USB y Modem Wisol WSSFM10R4 RC4 .
