@@ -117,7 +117,7 @@ void loop() {
 - Voltaje:     AT$V?
 - Temperatura: AT$T?
 
-![](https://github.com/markoAntonio1692/32U4-DEVKIT-SIGFOX/blob/master/image/AT.JPG)
+![COMANDOS AT UFOX](https://github.com/TECA-IOT/ufox-schematics/blob/main/UFOX%20COMANDOS%20AT_.gif)
 
 ## 2.3 Enviar mensaje sigfox mediante comandos AT
 Enviar un mensaje a backend sigfox sera el siguiente: 255 decimal, SIGA LA SECUENCIA DE COMANDOS SIGUIENTE:
@@ -125,7 +125,6 @@ Enviar un mensaje a backend sigfox sera el siguiente: 255 decimal, SIGA LA SECUE
 - AT$RC
 - AT$SF=FF
 
-![COMANDOS AT UFOX](https://github.com/TECA-IOT/ufox-schematics/blob/main/UFOX%20COMANDOS%20AT_.gif)
 
 
 ## 2.4 Cómo registrar dispositivos a la red Sigfox
