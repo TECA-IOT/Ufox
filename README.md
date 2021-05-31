@@ -136,6 +136,10 @@ Enviar un mensaje a backend sigfox sera el siguiente: 255 decimal, SIGA LA SECUE
 - Registre sus objetos con ID / PAC.
  Sus dispositivos están listos para la comunicación.
  
+ ### Activacion por Buy Sigfox
+ - Disponible sólo para paises de: Colombia, Ecuador, Uruguay, Costa Rica, El Salvador, Panamá, 
+ - Ingresar a la pagina  Buy Sigfox, Activate my devkit, Seleccionar su País e introducir los codigos ID y PAC: `<link>` : <https://buy.sigfox.com/activate> 
+ 
 #### 2.4.1 GLOSARIO
 - ID : Identificador del dispositivo de 4 bytes (Es único)
 - PAC :Código de autorización de transferencia de 8 bytes (Válido una vez). PAC es el certificado de propiedad del objeto, es requerido por la plataforma SIGFOX para validar las solicitudes de registro / transferencia de equipos. Una vez utilizado, la validez del código expira y se asigna un nuevo código.
