@@ -125,6 +125,9 @@ Enviar un mensaje a backend sigfox sera el siguiente: 255 decimal, SIGA LA SECUE
 - AT$RC
 - AT$SF=FF
 
+![extraer id y pac de devkit ufox (1)](https://github.com/TECA-IOT/ufox-schematics/blob/main/UFOX%20COMANDOS%20AT.gif)
+
+
 ## 2.4 Cómo registrar dispositivos a la red Sigfox
 -  Obtenga un dispositivo SIGFOX ReadyTM (hardware).
 - Obtenga el par de código ID/PAC de los dispositivos (extraible en el modem del dispositivo).
