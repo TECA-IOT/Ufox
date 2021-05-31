@@ -124,6 +124,7 @@ Enviar un mensaje a backend sigfox sera el siguiente: 255 decimal, SIGA LA SECUE
 - AT$GI?
 - AT$RC
 - AT$SF=FF
+
 ![COMANDOS AT UFOX SEND](https://github.com/TECA-IOT/ufox-schematics/blob/main/COMANDO%20AT%20UFOX%20SEND.gif)
 
 
