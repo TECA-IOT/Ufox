@@ -141,7 +141,7 @@ Enviar un mensaje a backend sigfox sera el siguiente: 255 decimal, SIGA LA SECUE
  - Ingresar a la pagina  Buy Sigfox, Activate my devkit, Seleccionar su País e introducir los codigos ID y PAC: `<link>` : <https://buy.sigfox.com/activate> 
  
  ### Activación por contrato directo:
- - Para el resto de Paises. Contactarse por nuestro correos:  <gerencia.tecaperu@gmail.com> ó   nuestra pagina web <https://teca.pe> ó redes sosciales
+ - Para el resto de Paises. Contactarse por nuestro correos:  <gerencia.tecaperu@gmail.com> ó   nuestra pagina web <https://teca.pe> ó redes sociales <https://www.facebook.com/TecaIoTPeru>
  
 #### 2.4.1 GLOSARIO
 - ID : Identificador del dispositivo de 4 bytes (Es único)
