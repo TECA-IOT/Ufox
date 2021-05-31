@@ -87,7 +87,7 @@ void loop()
 - Selecciones la placa Arduino Leonardo y seleccion el puerto COM detectado en su PC.
 - Y cargue el sketch.
 
-![](https://github.com/markoAntonio1692/32U4-DEVKIT-SIGFOX/blob/master/image/arduino.jpg)
+![blink ufox](https://github.com/TECA-IOT/ufox-schematics/blob/main/blink%20ufox.gif)
 
 ## 2.2 Comuncación Serial con modem Wisol
 *El modem Wisol WSSFM10R4AT puede comunicarse mediante puerto serial1 a 9600 baudios, con una sintaxis definida con comando "AT", puede consultar mas informacion de comandos en la hoja de datos (datasheet). El modem trabaja a una frecuencia de 920MHZ Uplink y 922 Dowlink. Consulte mas informacionde como activar el mdem en la platafoma de sigfox o con su operador sigfox Local : Aqui 
