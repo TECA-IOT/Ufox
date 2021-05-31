@@ -214,8 +214,6 @@ void loop() {
 - La información podrá vizualizarse en el backend de Sigfox. Usted previamente debe tener asociado a su cuenta el devkit Ufox con un contrato de conectividad. Se mostrara el ID de su dispositivo asociado y el nuevo codigo PAC que has sido generado tras la activación del contrato.
 - El Backend de Sigfox es la plataforma para poder gestionar las conexiones de sus dispositivos. La configuración mas importante a consideracion son los Callbacks, donde podra redireccionar los mensajes por medio de HTTP o HTTPS a otros servidores, o tambien redireccionarlos a AWS IOT Core, Azure e IBM.
 
-![Simple uplink Ufox](https://github.com/TECA-IOT/ufox-schematics/blob/main/simple%20uplink%20ufox.gif)
+![Simple uplink Ufox - backend sigfox](https://github.com/TECA-IOT/ufox-schematics/blob/main/simple%20uplink%20ufox.gif)
 
-
-![](https://github.com/TECA-IOT/Ufox/blob/master/image/wewe.png)
 
