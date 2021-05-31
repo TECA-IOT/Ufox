@@ -163,7 +163,7 @@ La libreria ufox incorpora una serie de funciones y metodos que simplifican la c
 
 ## 3.2 Enviar un Mensaje Simple con librería Ufox.h
 ![](https://github.com/TECA-IOT/Ufox/blob/master/image/lib_ufox1.png)
-En este ejemplo puede enviar un Mensaje numerico cada vez que el boton 13 sea presionado, tenga en cuenta que los mensajes sigfox son hexagesimales de maximo 12 bytes, todos los valores numericos seran convertidos a valores hexagesimales.
+En este ejemplo puede enviar un mensaje numérico cada vez que el botón 13 (ubicado al lado derecho del devkit), es presionado. Tener en consideración que los mensajes Sigfox son enviados en formato de hexagesimales con un tamaño  máximo de 12 bytes de carga útil (Payload), todos los valores numéricos serán convertidos a valores hexagesimales de forma automatica por librería.
 
 ```javascript
 #include <Ufox.h>
@@ -210,6 +210,11 @@ void loop() {
 ![](https://github.com/TECA-IOT/Ufox/blob/master/image/qwrw.PNG)
 
 ###
-- La informacion podra vizualizarse en el backend de sigfox. Usted previamente debe tener asociado a su cuenta el devkit ufox con su respectivo PAC  y ID.
+- La información podrá vizualizarse en el backend de Sigfox. Usted previamente debe tener asociado a su cuenta el devkit Ufox con un contrato de conectividad. Se mostrara el ID de su dispositivo asociado y el nuevo codigo PAC que has sido generado tras la activación del contrato.
+- El Backend de Sigfox es la plataforma para poder gestionar las conexiones de sus dispositivos. La configuración mas importante a consideracion son los Callbacks, donde podra redireccionar los mensajes por medio de HTTP o HTTPS a otros servidores, o tambien redireccionarlos a AWS IOT Core, Azure e IBM.
+
+![Simple uplink Ufox](https://github.com/TECA-IOT/ufox-schematics/blob/main/simple%20uplink%20ufox.gif)
+
 
 ![](https://github.com/TECA-IOT/Ufox/blob/master/image/wewe.png)
+
