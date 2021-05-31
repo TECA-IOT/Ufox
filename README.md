@@ -162,8 +162,9 @@ La libreria ufox incorpora una serie de funciones y metodos que simplifican la c
 ![descargar libreria ufox](https://github.com/TECA-IOT/ufox-schematics/blob/main/descargar%20libreria%20ufox.gif)
 
 ## 3.2 Enviar un Mensaje Simple con librería Ufox.h
+
+En este ejemplo puede enviar un mensaje numérico cada vez que el botón 13 (ubicado al lado derecho del devkit), es presionado. Tener en consideración que los mensajes Sigfox son enviados en formato de hexagesimales con un tamaño  máximo de 12 bytes de carga útil (Payload), todos los valores numéricos serán convertidos a valores hexagesimales de forma automatica por librería. Elija el ejemplo llamado "Simple_uplink". 
 ![](https://github.com/TECA-IOT/Ufox/blob/master/image/lib_ufox1.png)
-En este ejemplo puede enviar un mensaje numérico cada vez que el botón 13 (ubicado al lado derecho del devkit), es presionado. Tener en consideración que los mensajes Sigfox son enviados en formato de hexagesimales con un tamaño  máximo de 12 bytes de carga útil (Payload), todos los valores numéricos serán convertidos a valores hexagesimales de forma automatica por librería.
 
 ```javascript
 #include <Ufox.h>
@@ -207,7 +208,7 @@ void loop() {
 ```
 
 ###
-![](https://github.com/TECA-IOT/Ufox/blob/master/image/qwrw.PNG)
+
 
 ###
 - La información podrá vizualizarse en el backend de Sigfox. Usted previamente debe tener asociado a su cuenta el devkit Ufox con un contrato de conectividad. Se mostrara el ID de su dispositivo asociado y el nuevo codigo PAC que has sido generado tras la activación del contrato.
