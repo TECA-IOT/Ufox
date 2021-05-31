@@ -5,7 +5,7 @@ Kit de desarrollo Sigfox para region RC4:
 Asia pacifico: 
 Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Thailandia.
 
-## 1.1 Visita la Wiki Ufox: Documentacion y ejemplos avanzados
+## 1.1 Visita la Wiki Ufox: Documentación y ejemplos avanzados
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki>
 ### 1.1.1 API librería ufox.h
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki/API>
