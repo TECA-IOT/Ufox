@@ -16,7 +16,7 @@ Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Tha
 ### 1.1.4 Librería Fritzing
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Libreria-de-ufox-para-Fritzing>
 ### 1.1.4 Guía de inicio rápido
-`<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Guia-de-inicio-r%C3%A1pido>
+`<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Gu%C3%ADa-de-inicio-r%C3%A1pido>
 
 
 ## 1.2 Caracteristicas
