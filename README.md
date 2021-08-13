@@ -41,6 +41,7 @@ Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Tha
 ### 1.3.1 Electricas 
 
 | Descripcion | Unidad                    |
+| ------------- | ------------------------------ |
 | Voltaje entrada USB (Conector micro USB)(1*)|  5V Voltios    |  
 | Voltaje Mínimo entrada (Pin VIN) (1*)|  3.7 Voltios    |  
 | Voltaje Máximo  entrada (Pin VIN) (1*)|  9 Voltios    |  
