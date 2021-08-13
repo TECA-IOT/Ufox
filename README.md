@@ -55,7 +55,7 @@ Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Tha
 
 - Notas(*)
 - (1*) Referente a la Entrada de voltaje por el Pin "VIN" o por el conector micro USB. Este voltaje ingresa por el regulador interno, el regulador suministrara a su salida 3.3 Voltios alimentando a toda la electrónica interna. El voltaje regulado se ve reflejado en el Pin "3.3V".
-- (2*) Referente a la entrada de voltaje en el Pin "3.3V" para el  caso donde no exista entrada de voltaje por el pin "VIN". Estevoltaje es suministrado sin proteccion directamente a toda la electronica interna.
+- (2*) Referente a la entrada de voltaje en el Pin "3.3V" para el  caso donde no exista entrada de voltaje por el pin "VIN". Este voltaje es suministrado sin proteccion directamente a toda la electronica interna.
 
 ### 1.3.2 Radiofrecuencia
 | Descripcion | Unidad                    |
