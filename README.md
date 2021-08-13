@@ -46,6 +46,8 @@ Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Tha
 | Voltaje Mínimo entrada (Pin VIN) (1*)|  3.7 Voltios    |  
 | Voltaje Máximo  entrada (Pin VIN) (1*)|  9 Voltios    |  
 | Corriente máxima   | 1A   (1*)  |
+
+| Descripcion | Unidad                    |
 | ------------- | ------------------------------ |
 | Voltaje de funcionamiento interno típico (Pin 3.3V) |  3.3 Voltios  | 
 | Voltaje Máximo absoluto de funcionamiento (Pin 3.3V) (2*)|  4 Voltios    |  
