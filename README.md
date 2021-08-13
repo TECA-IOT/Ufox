@@ -40,22 +40,22 @@ Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Tha
 ## 1.3 Caracteristicas 
 ### 1.3.1 Electricas 
 
-| Descripcion | Unidad                    |
+| Descripcion (1*)| Unidad                    |
 | ------------- | ------------------------------ |
-| Voltaje entrada USB (Conector micro USB)(1*)|  5 Voltios    |  
-| Voltaje Mínimo entrada (Pin VIN) (1*)|  3.7 Voltios    |  
-| Voltaje Máximo  entrada (Pin VIN) (1*)|  9 Voltios    |  
-| Corriente máxima (1*)   | 1A    |
+| Voltaje entrada USB (Conector micro USB)|  5 Voltios    |  
+| Voltaje Mínimo entrada (Pin VIN) |  3.7 Voltios    |  
+| Voltaje Máximo  entrada (Pin VIN) |  9 Voltios    |  
+| Corriente máxima    | 1A    |
 | Voltaje de funcionamiento interno típico  |  3.3 Voltios  | 
 
-| Descripcion | Unidad                    |
+| Descripcion (2*)| Unidad                    |
 | ------------- | ------------------------------ |
-| Voltaje Máximo absoluto entrada (Pin 3.3V) (2*)|  4 Voltios    |  
-| Voltaje Mínimo absoluto entrada (Pin 3.3V) (2*)|  2.7 Voltios  |  
+| Voltaje Máximo absoluto entrada (Pin 3.3V) |  4 Voltios    |  
+| Voltaje Mínimo absoluto entrada (Pin 3.3V) |  2.7 Voltios  |  
 
 - Notas(*)
 - (1*) Referente a la Entrada de voltaje por el Pin "VIN" o por el conector micro USB. Este voltaje ingresa por el regulador interno, el regulador suministrara a su salida 3.3 Voltios alimentando a toda la electrónica interna. El voltaje regulado se ve reflejado en el Pin "3.3V".
-- (2*) Referente a la entrada de voltaje en el Pin "3.3V" para el  caso donde no exista entrada de voltaje por el pin "VIN". Este voltaje es suministrado sin proteccion directamente a toda la electronica interna.
+- (2*) Referente a la entrada de voltaje en el Pin "3.3V" para el  caso donde no exista entrada de voltaje por el pin "VIN". Este voltaje es suministrado sin proteccion directamente a toda la electronica interna. Esta forma de alimentar puede ser útil cuando se requiera emplear baterias.
 
 ### 1.3.2 Radiofrecuencia
 | Descripcion | Unidad                    |
