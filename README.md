@@ -37,18 +37,35 @@ Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Tha
 
 ![](https://github.com/TECA-IOT/Ufox/blob/master/image/ufox%20antena.png)
 
-## 1.3 Caracteristicas Electricas
+## 1.3 Caracteristicas 
+### 1.3.1 Electricas 
 
 | Descripcion | Unidad                    |
+| Voltaje entrada USB (Conector micro USB)(1*)|  5V Voltios    |  
+| Voltaje Mínimo entrada (Pin VIN) (1*)|  3.7 Voltios    |  
+| Voltaje Máximo  entrada (Pin VIN) (1*)|  9 Voltios    |  
+| Corriente máxima   | 1A   (1*)  |
 | ------------- | ------------------------------ |
-| Voltaje Mínimo  Vin |  3.7 Voltios    |  
-| Voltaje Máximo  Vin |  9 Voltios    |  
-| Voltaje  alimentacion VCC |  3.3 Voltios    | 
-| Corriente máxima   | 1A     |
+| Voltaje de funcionamiento interno típico (Pin 3.3V) |  3.3 Voltios  | 
+| Voltaje Máximo absoluto de funcionamiento (Pin 3.3V) (2*)|  4 Voltios    |  
+| Voltaje Mínimo absoluto de funcionamiento (Pin 3.3V) (2*)|  2.7 Voltios  |  
+
+### 1.3.2 Radiofrecuencia
+| Descripcion | Unidad                    |
+| ------------- | ------------------------------ |
 | Antena helicoidal    | 3 DBi      |
 | Frec. Uplink     | 920.8 MHz      |
 | Frec. Downlink     | 922.3 MHz      |
+| Data rate     | 600bps      |
+| Potencia RF     | +22dbm   0,2045W máx   |
+| Modulación     | DBPSK    |
+| Técnica de transmisión     | FHSS   |
+| Técnologia de transmisión     | UNB (Ultra narrow band) - Sigfox   |
+| Canales de transmisión     | 54 canales (9 macro-canales x 6 micro-canales)   |
 
+Nota(*)
+(1*) Referente a la Entrada de voltaje por el Pin "VIN" o por el conector micro USB. Este voltaje pasa por el regulador interno, el regulador suministrara a su salida 3.3 Voltios, alimentando a la electrónica interna. este voltaje se ve reflejado en el Pin "3.3V"
+(2*) Referente a la entrada de voltaje en el Pin "3.3V" para el  caso donde no exista entrada de voltaje por el pin "VIN". 
 
 ## 1.4 Descripcion de pines Ufox
 
