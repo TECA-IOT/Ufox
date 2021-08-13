@@ -53,6 +53,10 @@ Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Tha
 | Voltaje Máximo absoluto de funcionamiento (Pin 3.3V) (2*)|  4 Voltios    |  
 | Voltaje Mínimo absoluto de funcionamiento (Pin 3.3V) (2*)|  2.7 Voltios  |  
 
+- Nota(*)
+- (1*) Referente a la Entrada de voltaje por el Pin "VIN" o por el conector micro USB. Este voltaje pasa por el regulador interno, el regulador suministrara a su salida 3.3 Voltios, alimentando a la electrónica interna. este voltaje se ve reflejado en el Pin "3.3V".
+- (2*) Referente a la entrada de voltaje en el Pin "3.3V" para el  caso donde no exista entrada de voltaje por el pin "VIN". 
+
 ### 1.3.2 Radiofrecuencia
 | Descripcion | Unidad                    |
 | ------------- | ------------------------------ |
@@ -66,9 +70,6 @@ Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Tha
 | Técnologia de transmisión     | UNB (Ultra narrow band) - Sigfox   |
 | Canales de transmisión     | 54 canales (9 macro-canales x 6 micro-canales)   |
 
-Nota(*)
-(1*) Referente a la Entrada de voltaje por el Pin "VIN" o por el conector micro USB. Este voltaje pasa por el regulador interno, el regulador suministrara a su salida 3.3 Voltios, alimentando a la electrónica interna. este voltaje se ve reflejado en el Pin "3.3V"
-(2*) Referente a la entrada de voltaje en el Pin "3.3V" para el  caso donde no exista entrada de voltaje por el pin "VIN". 
 
 ## 1.4 Descripcion de pines Ufox
 
