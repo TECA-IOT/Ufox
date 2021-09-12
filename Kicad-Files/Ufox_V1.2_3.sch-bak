@@ -610,16 +610,6 @@ Text Label 8000 5850 0    50   ~ 0
 A5
 Text Label 8000 6050 0    50   ~ 0
 RST
-Text Label 8000 6150 0    50   ~ 0
-GND
-Text Label 8000 6250 0    50   ~ 0
-VIN
-Text Label 8000 5950 0    50   ~ 0
-+3.3V
-Text Label 9400 4950 2    50   ~ 0
-GND
-Text Label 9400 5050 2    50   ~ 0
-+3.3V
 Text Label 9400 5150 2    50   ~ 0
 D9
 Text Label 9400 5250 2    50   ~ 0
@@ -636,10 +626,6 @@ Text Label 9400 5750 2    50   ~ 0
 D3
 Text Label 9400 5850 2    50   ~ 0
 D2
-Text Label 9400 5950 2    50   ~ 0
-GND
-Text Label 9400 6050 2    50   ~ 0
-GND
 Text Label 9400 6150 2    50   ~ 0
 RX
 Text Label 9400 6250 2    50   ~ 0
@@ -942,16 +928,14 @@ D12
 $Comp
 L power:+3.3V #PWR021
 U 1 1 61415751
-P 8550 1500
-F 0 "#PWR021" H 8550 1350 50  0001 C CNN
-F 1 "+3.3V" H 8565 1673 50  0000 C CNN
-F 2 "" H 8550 1500 50  0001 C CNN
-F 3 "" H 8550 1500 50  0001 C CNN
-	1    8550 1500
+P 8550 1400
+F 0 "#PWR021" H 8550 1250 50  0001 C CNN
+F 1 "+3.3V" H 8565 1573 50  0000 C CNN
+F 2 "" H 8550 1400 50  0001 C CNN
+F 3 "" H 8550 1400 50  0001 C CNN
+	1    8550 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8550 1500 8550 1600
 $Comp
 L power:GND #PWR020
 U 1 1 6141CDF9
@@ -1012,10 +996,10 @@ Connection ~ 8850 3900
 Wire Wire Line
 	8850 3900 8750 3900
 $Comp
-L Device:C C8
+L Device:C C9
 U 1 1 6146F34A
 P 9900 2200
-F 0 "C8" V 9648 2200 50  0000 C CNN
+F 0 "C9" V 9648 2200 50  0000 C CNN
 F 1 "100nF" V 9739 2200 50  0000 C CNN
 F 2 "" H 9938 2050 50  0001 C CNN
 F 3 "~" H 9900 2200 50  0001 C CNN
@@ -1039,8 +1023,6 @@ Wire Wire Line
 	10050 2200 10150 2200
 NoConn ~ 9650 2400
 NoConn ~ 9650 2500
-NoConn ~ 9650 2700
-NoConn ~ 9650 2800
 NoConn ~ 9650 3000
 NoConn ~ 9650 3100
 Wire Notes Line width 12
@@ -1136,13 +1118,13 @@ CRYSTAL
 Text Notes 7800 4750 0    118  ~ 24
 PINES
 Wire Notes Line width 12
-	7750 4500 9600 4500
+	7650 4500 9800 4500
 Wire Notes Line width 12
-	9600 6400 7750 6400
+	9800 6400 7650 6400
 Wire Notes Line width 12
-	7750 6400 7750 4500
+	7650 6400 7650 4500
 Wire Notes Line width 12
-	9600 4500 9600 6400
+	9800 4500 9800 6400
 $Bitmap
 Pos 10400 6850
 Scale 0.250000
@@ -3032,4 +3014,89 @@ CB 4E 48 05 00 00 00 00 08 10 52 01 00 00 00 00 02 84 54 00 00 00 00 80 00 21 15
 00 02 84 54 00 00 00 00 80 80 DF 01 E4 93 06 16 87 0C 9E 94 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+Wire Wire Line
+	9650 2700 9800 2700
+Wire Wire Line
+	9650 2800 9800 2800
+Text Label 9800 2700 2    50   ~ 0
+TX
+Text Label 9800 2800 2    50   ~ 0
+RX
+$Comp
+L Device:C C8
+U 1 1 613D2B7D
+P 8800 1500
+F 0 "C8" V 8548 1500 50  0000 C CNN
+F 1 "100nF" V 8639 1500 50  0000 C CNN
+F 2 "" H 8838 1350 50  0001 C CNN
+F 3 "~" H 8800 1500 50  0001 C CNN
+	1    8800 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8550 1400 8550 1500
+Wire Wire Line
+	8650 1500 8550 1500
+Connection ~ 8550 1500
+Wire Wire Line
+	8550 1500 8550 1600
+$Comp
+L power:GND #PWR022
+U 1 1 613E12DB
+P 9050 1500
+F 0 "#PWR022" H 9050 1250 50  0001 C CNN
+F 1 "GND" H 9055 1327 50  0000 C CNN
+F 2 "" H 9050 1500 50  0001 C CNN
+F 3 "" H 9050 1500 50  0001 C CNN
+	1    9050 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9050 1500 8950 1500
+Wire Wire Line
+	2150 1350 2150 1500
+Text GLabel 2150 1350 0    50   Input ~ 0
+VIN
+Text GLabel 8000 6250 0    50   Input ~ 0
+VIN
+Text GLabel 3500 1500 2    50   Input ~ 0
++3.3V
+Wire Wire Line
+	3500 1500 3400 1500
+Text GLabel 3500 2000 2    50   Input ~ 0
+GND
+Wire Wire Line
+	3500 2000 3400 2000
+Text GLabel 8000 5950 0    50   Input ~ 0
++3.3V
+Text GLabel 8000 6150 0    50   Input ~ 0
+GND
+Text GLabel 9400 5950 2    50   Input ~ 0
+GND
+Text GLabel 9400 6050 2    50   Input ~ 0
+GND
+Text GLabel 9400 4950 2    50   Input ~ 0
+GND
+Text GLabel 9400 5050 2    50   Input ~ 0
++3.3V
+$Comp
+L power:GND #PWR0101
+U 1 1 61442C6F
+P 10650 1800
+F 0 "#PWR0101" H 10650 1550 50  0001 C CNN
+F 1 "GND" H 10655 1627 50  0000 C CNN
+F 2 "" H 10650 1800 50  0001 C CNN
+F 3 "" H 10650 1800 50  0001 C CNN
+	1    10650 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 1500 10650 1500
+Wire Wire Line
+	10650 1500 10650 1700
+Wire Wire Line
+	10550 1700 10650 1700
+Connection ~ 10650 1700
+Wire Wire Line
+	10650 1700 10650 1800
 $EndSCHEMATC
