@@ -18,6 +18,8 @@ Australia, Hong Kong, Indonesia, Malasia, Nueva Zelanda, Singapure, Taiwán, Tha
 ### 1.1.4 Guía de inicio rápido
 `<link>` : <https://github.com/TECA-IOT/Ufox/wiki/Gu%C3%ADa-de-inicio-r%C3%A1pido>
 
+### 1.1.5 SHIELD UFOX INFORMACION:
+`<link>` : <https://github.com/TECA-IOT/Shield-Ufox>
 
 ## 1.2 Caracteristicas
 
