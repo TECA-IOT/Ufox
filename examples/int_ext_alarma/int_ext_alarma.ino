@@ -12,7 +12,7 @@ byte Evento = inactivo;
 long ts = 0 ;
 long TimeOutTrigger = 15*60*1000L;
 long TimeOutRutina = 4*60*60*1000L;
-Ufox wisol;
+Ufox ufox;
 
 void onAlarm() {
  Evento = alarma;
@@ -21,7 +21,7 @@ void onAlarm() {
 
 void setup() {
   Serial.begin(115200);
-  wisol.begin(9600);
+  ufox.begin(9600);
 
   while (!Serial);  //comentar si usará una fuente de energía externa
 
@@ -57,9 +57,9 @@ void loop() {
 
 void Tx(){
   
-      wisol.RST();
+      ufox.RST();
       digitalWrite(RXLED, LOW);
-      uint16_t bateria = wisol.VOLT();         //int=16bits=2bytes
+      uint16_t bateria = ufox.VOLT();         //int=16bits=2bytes
       //Total=7Bytes
       byte Estado = digitalRead(pinEvento);
       Serial.print(Evento); Serial.print(" ");
@@ -74,8 +74,8 @@ void Tx(){
       Serial.print("Enviando: ");
       Serial.println(buff);
 
-      Serial.println(wisol.SEND(buff)); //Envio de datos Sigfox
+      Serial.println(ufox.SEND(buff)); //Envio de datos Sigfox
 
       digitalWrite(RXLED, HIGH);
-      wisol.SLEEP();
+      ufox.SLEEP();
   }

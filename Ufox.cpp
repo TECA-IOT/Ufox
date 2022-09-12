@@ -135,7 +135,7 @@ String Ufox::command2(String _cmd) {
        //Serial.print(caracter);
        i++;
     }
-    if (now - lastMsg > 70000) {
+    if (now - lastMsg > 60000) {
       //Serial.println("salio");
       break;
     }

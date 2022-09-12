@@ -22,12 +22,10 @@ más informacion en https://github.com/TECA-IOT/Ufox
 
 
 #include <Ufox.h>
-#include "LowPower.h"
+#include <LowPower.h>
 const int wakeUpPin = 2;
-//se necesita un pin con interrupcion. en el ufox, los pines 0,1,2,3 tiene interrupcion. el pin 0 y 1 esta ocupados en el serial1, conectaddo al modulo wisol
+//se necesita un pin con interrupcion. en el ufox, los pines 0,1,2,3 tiene interrupcion. el pin 0 y 1 esta ocupados en el serial1, conectaddo al modulo ufox
 #define RXLED  17 
-
-Ufox wisol;
 
 #include "DHT.h"
 
@@ -38,6 +36,8 @@ Ufox wisol;
 //#define DHTTYPE DHT21   // DHT 21 (AM2301)
 DHT dht(DHTPIN, DHTTYPE);
 
+Ufox ufox;
+
 void wakeUp()
 {
     // una funcion vacia, solo para "despertar" el cpu.
@@ -45,7 +45,7 @@ void wakeUp()
 
 void setup() {
  Serial.begin(115200);
- wisol.begin(9600);
+ ufox.begin(9600);
  dht.begin();
 
  pinMode(RXLED,OUTPUT);
@@ -61,13 +61,13 @@ void loop() {
   
      LowPower.powerDown(SLEEP_FOREVER, ADC_OFF, BOD_OFF); //el Serial dejara de funcionar despues del primer deep sleep
      //el modulo entrara en modo de "sueño porfundo" (ahorro de energia). el cpu permanece pausado hasta recibir una interrupcion por algun pin o un timer.
-     wisol.RST(); 
+     ufox.RST(); 
      digitalWrite(RXLED,LOW);
      
      uint8_t  humedad = dht.readHumidity();// varia entre 0% hasta 100% un byte es suficiente
      int16_t temperatura_dht = dht.readTemperature()*10; // multiplicamos por 10 antes de convertirlo en entero con signo para no perder un decimal. 2bytes
-     uint16_t temperatura_w = wisol.TEMP();     //int=16bits=2bytes
-     uint16_t bateria = wisol.VOLT();         //int=16bits=2bytes
+     uint16_t temperatura_w = ufox.TEMP();     //int=16bits=2bytes
+     uint16_t bateria = ufox.VOLT();         //int=16bits=2bytes
                                                  //Total=7Bytes                                                  
      Serial.print(humedad); Serial.print(" ");
      Serial.print(temperatura_dht); Serial.print(" ");
@@ -81,13 +81,13 @@ void loop() {
      Serial.print("Enviando: ");
      Serial.println(buff);
      
-     Serial.println(wisol.SEND(buff)); //Envio de datos Sigfox
+     Serial.println(ufox.SEND(buff)); //Envio de datos Sigfox
      
      digitalWrite(RXLED,HIGH);
-     wisol.SLEEP(); 
+     ufox.SLEEP(); 
      
      delay(3000);
-     Serial.println("-Presione botón 2-");
+     Serial.println("-Presione botón (pin 2)-");
      
      //LowPower.powerDown(SLEEP_FOREVER, ADC_OFF, BOD_OFF); //el Serial dejara de funcionar despues del primer deep sleep
      
