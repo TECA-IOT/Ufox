@@ -3,3 +3,5 @@
     * Funciones basicas de comunicacion en inicializion de modem
     * metodo SEND y SEND_RCV  envian y retornan strings.
     * metodo comand para interactuar directamente con comandos at
+1.5
+    * Actualizacion de ejemplos
